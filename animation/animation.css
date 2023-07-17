@@ -1,0 +1,35 @@
+.box {
+    width: 200px;
+    height: 200px;
+
+    /* name, duration, iteration-count */
+    -webkit-animation: change-bg 3s infinite;
+    animation: change-bg 3s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-bg {
+    /* 0% {
+        background-color: goldenrod;
+    }
+    100% {
+        background-color: darkgreen;
+    } */
+
+    from {
+        background-color: goldenrod;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        background-color: darkgreen;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
