@@ -1,0 +1,52 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumslateblue;
+    width: 180px;
+    height: 180px;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.translate:hover {
+    -webkit-transform: translate(500px);
+    -moz-transform: translate(500px);
+    -ms-transform: translate(500px);
+    -o-transform: translate(500px);
+    transform: translate(500px);
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.scale:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.skew:hover {
+    -webkit-transform: skew(30deg, 30deg);
+    -moz-transform: skew(30deg, 30deg);
+    -ms-transform: skew(30deg, 30deg);
+    -o-transform: skew(30deg, 30deg);
+    transform: skew(30deg, 30deg);
+}
+
+.matrix:hover {
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    -webkit-transform: matrix(1.1, 0.5, 0.5, 1.1, 100, 0);
+    -moz-transform: matrix(1.1, 0.5, 0.5, 1.1, 100, 0);
+    -ms-transform: matrix(1.1, 0.5, 0.5, 1.1, 100, 0);
+    -o-transform: matrix(1.1, 0.5, 0.5, 1.1, 100, 0);
+    transform: matrix(1.1, 0.5, 0.5, 1.1, 100, 0);
+}
