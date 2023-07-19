@@ -75,3 +75,73 @@
 .ease:hover, .ease-in:hover, .ease-out:hover, .ease-in-out:hover, .linear:hover {
     width: 1000px;
 }
+
+/* examples */
+#transition-examples {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fade-out, .border, .color-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.fade-out {
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    opacity: 1;
+
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-out:hover {
+    opacity: 0;
+}
+
+.border {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    border: 5px solid transparent;
+
+    -webkit-transition: border-radius 1s linear, border-color 1s linear;
+    -moz-transition: border-radius 1s linear, border-color 1s linear;
+    -ms-transition: border-radius 1s linear, border-color 1s linear;
+    -o-transition: border-radius 1s linear, border-color 1s linear;
+    transition: border-radius 1s linear, border-color 1s linear;
+}
+
+.border:hover {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    border-color: #000;
+}
+
+.color-change {
+    width: 200px;
+    height: 200px;
+    background-color: darkmagenta;
+
+    -webkit-transition: background-color 3s ease;
+    -moz-transition: background-color 3s ease;
+    -ms-transition: background-color 3s ease;
+    -o-transition: background-color 3s ease;
+    transition: background-color 3s ease;
+}
+
+.color-change:hover {
+    background-color: violet;
+}
