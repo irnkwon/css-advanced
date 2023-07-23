@@ -166,3 +166,75 @@
         transform: rotate(360deg);
     }
 }
+
+.loader, .loader::before, .loader::after {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(192, 184, 246);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.loader {
+    position: relative;
+    margin: 100px 0;
+    -webkit-animation: changeMiddleDotBg 2s linear infinite;
+    animation: changeMiddleDotBg 2s linear infinite;
+}
+
+@keyframes changeMiddleDotBg {
+    25% {
+        background-color: rgb(192, 184, 246);
+    }
+    50% {
+        background-color: slateblue;
+    }
+    75% {
+        background-color: rgb(192, 184, 246);
+    }
+}
+
+.loader::before, .loader::after {
+    position: absolute;
+    content: '';
+}
+
+.loader::before {
+    right: 50px;
+    -webkit-animation: changeFirstDotBg 2s linear infinite;
+    animation: changeFirstDotBg 2s linear infinite;
+}
+
+@keyframes changeFirstDotBg {
+    25% {
+        background-color: slateblue;
+    }
+    50% {
+        background-color: rgb(192, 184, 246);
+    }
+    75% {
+        background-color: rgb(192, 184, 246);
+    }
+}
+
+.loader::after {
+    left: 50px;
+    -webkit-animation: changeLastDotBg 2s linear infinite;
+    animation: changeLastDotBg 2s linear infinite;
+}
+
+@keyframes changeLastDotBg {
+    25% {
+        background-color: rgb(192, 184, 246);
+    }
+    50% {
+        background-color: rgb(192, 184, 246);
+    }
+    75% {
+        background-color: slateblue;
+    }
+}
